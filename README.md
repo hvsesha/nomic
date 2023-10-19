@@ -50,3 +50,9 @@ print(response)
 ```
 
 Explore Atlas' [documentation](https://docs.nomic.ai) to make more advanced maps.
+
+Error : ValueError: Underscore fields are reserved for Atlas internal use: __index_level_0__
+
+To fix this error, you need to remove the underscores from the names of the fields that you are trying to create, import, or export.
+
+For example, if you are trying to create a field in Atlas with the name _my_field, you would need to change the name to my_field. If you are trying to import data into Atlas that contains a field with the name _my_field, you would need to remove the underscore from the name of the field in the data before importing it.
